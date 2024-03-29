@@ -1104,6 +1104,8 @@ textarea {
 @media (max-width: 600px) {
   header {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100vw;
   }
   .navbar-toggle {
@@ -1112,6 +1114,7 @@ textarea {
     padding: 10px;
     border-radius: 5px;
     height: 40px;
+    margin-left: -10%;
   }
   nav {
     margin: 0px 0px;
