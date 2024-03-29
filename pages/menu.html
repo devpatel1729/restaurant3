@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
-    
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </head>
   <body>
     <header>
-      <nav>
-        <a href="../index.html">
-          <div class="logo">
-            <img src="../images/Logo.svg" alt="logo" />
-          </div>
-        </a>
-        <ul>
+      <nav class="navbar">
+        <div class="logo-btn">
+          <a href="../index.html">
+            <div class="logo">
+              <img src="../images/Logo.svg" alt="logo" />
+            </div>
+          </a>
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+        <ul class="nav-ul" id="js-menu">
           <li>
             <a href="../index.html" class="navs">Home</a>
           </li>
@@ -860,6 +864,35 @@
             </div>
           </div>
         </div>
+        <div class="logos-mobile">
+          <div class="logom">
+            <img src="../images/ubereats.svg" alt="app-logo" />
+          </div>
+          <div class="logom">
+            <img src="../images/grab.svg" alt="app-logo" />
+          </div>
+          <div class="logom">
+            <img src="../images/post.svg" alt="app-logo" />
+          </div>
+          <div class="logom">
+            <img src="../images/door.svg" alt="app-logo" />
+          </div>
+          <div class="logom">
+            <img src="../images/food.svg" alt="app-logo" />
+          </div>
+          <div class="logom">
+            <img src="../images/deliveroo.svg" alt="app-logo" />
+          </div>
+          <div class="logom">
+            <img src="../images/instacart.svg" alt="uber-eats" />
+          </div>
+          <div class="logom">
+            <img src="../images/justeat.svg" alt="uber-eats" />
+          </div>
+          <div class="logom">
+            <img src="../images/didifood.svg" alt="uber-eats" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -978,5 +1011,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/main3.js"></script>
   </body>
 </html>

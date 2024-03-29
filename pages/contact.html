@@ -12,16 +12,25 @@
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="../index.html">
-          <div class="logo">
-            <img src="../images/Logo.svg" alt="logo" />
-          </div>
-        </a>
-        <ul>
+      <nav class="navbar">
+        <div class="logo-btn">
+          <a href="../index.html">
+            <div class="logo">
+              <img src="../images/Logo.svg" alt="logo" />
+            </div>
+          </a>
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+        <ul class="nav-ul" id="js-menu">
           <li>
             <a href="../index.html" class="navs">Home</a>
           </li>
@@ -217,5 +226,6 @@
     </footer>
 
     <script src="../js/main2.js"></script>
+    <script src="../js/main3.js"></script>
   </body>
 </html>

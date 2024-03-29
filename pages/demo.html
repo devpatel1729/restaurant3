@@ -3,62 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<style>
-  .swiper {
-  width: 600px;
-  height: 300px;
-  margin-top: auto;
-}
-</style>
+  <title>Swiper Slider Example</title>
+  <!-- Link to Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    /* Optional: Add custom styles */
+    .swiper-slide {
+      text-align: center;
+    }
+    .swiper-slide .grid-col {
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-  <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
+
+<!-- Swiper Container -->
+<div class="swiper-container">
+  <div class="menu-grid-items swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide"><img src="https://picsum.photos/id/237/600/300" alt=""></div>
-    <div class="swiper-slide"><img src="https://picsum.photos/id/238/600/300" alt=""></div>
-    <div class="swiper-slide"><img src="https://picsum.photos/id/231/600/300" alt=""></div>
-    ...
+    <div class="grid-col">
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="../images/menu-1.png" alt="menu-1" />
+        </div>
+        <div class="content">
+          <div class="price">
+            <p>$ 9.99</p>
+          </div>
+          <div class="name">
+            <p>Fried eggs</p>
+          </div>
+          <div class="info">
+            <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col">
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="../images/menu-1.png" alt="menu-1" />
+        </div>
+        <div class="content">
+          <div class="price">
+            <p>$ 9.99</p>
+          </div>
+          <div class="name">
+            <p>Fried eggs</p>
+          </div>
+          <div class="info">
+            <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col">
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="../images/menu-1.png" alt="menu-1" />
+        </div>
+        <div class="content">
+          <div class="price">
+            <p>$ 9.99</p>
+          </div>
+          <div class="name">
+            <p>Fried eggs</p>
+          </div>
+          <div class="info">
+            <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col">
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="../images/menu-1.png" alt="menu-1" />
+        </div>
+        <div class="content">
+          <div class="price">
+            <p>$ 9.99</p>
+          </div>
+          <div class="name">
+            <p>Fried eggs</p>
+          </div>
+          <div class="info">
+            <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col">
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="../images/menu-1.png" alt="menu-1" />
+        </div>
+        <div class="content">
+          <div class="price">
+            <p>$ 9.99</p>
+          </div>
+          <div class="name">
+            <p>Fried eggs</p>
+          </div>
+          <div class="info">
+            <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col">
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="../images/menu-1.png" alt="menu-1" />
+        </div>
+        <div class="content">
+          <div class="price">
+            <p>$ 9.99</p>
+          </div>
+          <div class="name">
+            <p>Fried eggs</p>
+          </div>
+          <div class="info">
+            <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col">
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="../images/menu-1.png" alt="menu-1" />
+        </div>
+        <div class="content">
+          <div class="price">
+            <p>$ 9.99</p>
+          </div>
+          <div class="name">
+            <p>Fried eggs</p>
+          </div>
+          <div class="info">
+            <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Repeat for other grid items -->
+    <!-- Make sure each grid-col is wrapped inside a swiper-slide -->
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-
-
-</div>
-<div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+  <!-- Navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
 
+<!-- Link to Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+  // Initialize Swiper
+  var swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 </script>
+
 </body>
 </html>
