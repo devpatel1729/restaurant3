@@ -25,4 +25,8 @@ if(window.innerWidth <= 600){
     menu.style.display = "none";
     isMenuOpen = false;
   }
+  window.onload = () => {
+    menu.style.display = "none";
+    isMenuOpen = false;
+  };
 }
