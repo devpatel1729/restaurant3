@@ -20,9 +20,13 @@ toggleButton.addEventListener("click", () => {
   }
 });
 
-if(window.innerWidth <= 600){
+if (window.innerWidth <= 600) {
   window.onscroll = () => {
     menu.style.display = "none";
     isMenuOpen = false;
-  }
+  };
+  window.onload = () => {
+    menu.style.display = "none";
+    isMenuOpen = false;
+  };
 }

@@ -13,6 +13,7 @@ function setActiveAndVisible(menuItem, menuGrid) {
 }
 
 menuItems.forEach((menuItem, index) => {
+  console.log(menuItem.innerHTML)
   menuItem.addEventListener("click", () => {
     setActiveAndVisible(menuItem, menuGrids[index]);
   });
